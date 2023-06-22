@@ -4,11 +4,13 @@ muestra por consola el mensaje: "Eres menor de edad". Guardar en un
 archivo llamado mayorDeEdad.js*/
 
 
-let edad = prompt ("ingrese su edad");
+const readlineSync = require('readline-sync');
+let edad = readlineSync.question('ingresa tu edad = ');
+
+
 
 if (edad >= 18){
-    alert("Eres mayor de edad");
+    console.log("¡ Eres mayor de edad !");
 }else{
-    alert("Eres menor de edad");
+    console.log("¡ Eres menor de edad !");
 };
-
