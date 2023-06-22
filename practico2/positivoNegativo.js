@@ -4,14 +4,15 @@ cero, muestra por consola el mensaje: "El numero es cero". Si el número
 es negativo, muestra por consola el mensaje: "El numero es negativo".
 Guardar el programa en un archivo con nombre positivoNegativo.js*/
  
-    let numero = prompt ("Ingrese un numero");
-
+    const readlineSync = require('readline-sync');
+    let numero = readlineSync.question("Ingrese un numero = ");
+    
     if (numero > 0){
-        alert ("El numero es positivo");
+        console.log ("El numero es positivo");
     }else if(numero == 0){
-        alert ("El numero es cero");
+        console.log ("El numero es cero");
     }else if(numero < 0 ){
-        alert ("El numero es negativo");
+        console.log ("El numero es negativo");
 
     }
 
